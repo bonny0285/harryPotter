@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Harry Potter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HarryPotterViewController" customModule="Harry_Potter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="si9-hD-Nit">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="harryPotter" rowHeight="207" id="ayk-oa-h23" customClass="HarryPotterCell" customModule="Harry_Potter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="207"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ayk-oa-h23" id="3MF-A0-8Ah">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="207"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4i-Li-1bj">
+                                                    <rect key="frame" x="15" y="11" width="570" height="185"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BXw-k9-qee">
+                                                            <rect key="frame" x="0.0" y="0.0" width="570" height="185"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n8-4A-czp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="570" height="32"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOR-xY-X0Q">
+                                                                    <rect key="frame" x="0.0" y="38" width="570" height="32.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQU-P8-Vcs">
+                                                                    <rect key="frame" x="0.0" y="76.5" width="570" height="32"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4g-nL-ceg">
+                                                                    <rect key="frame" x="0.0" y="114.5" width="570" height="32.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD3-Sp-51H">
+                                                                    <rect key="frame" x="0.0" y="153" width="570" height="32"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="BXw-k9-qee" firstAttribute="top" secondItem="I4i-Li-1bj" secondAttribute="top" id="7ir-6x-5Th"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BXw-k9-qee" secondAttribute="trailing" id="F1B-WF-sxs"/>
+                                                        <constraint firstItem="BXw-k9-qee" firstAttribute="leading" secondItem="I4i-Li-1bj" secondAttribute="leading" id="fdV-D0-P27"/>
+                                                        <constraint firstAttribute="bottom" secondItem="BXw-k9-qee" secondAttribute="bottom" id="spr-Nb-fA9"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="I4i-Li-1bj" secondAttribute="bottom" id="9al-Vd-yzZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="I4i-Li-1bj" secondAttribute="trailing" id="Bmy-7r-rG4"/>
+                                                <constraint firstItem="I4i-Li-1bj" firstAttribute="top" secondItem="3MF-A0-8Ah" secondAttribute="topMargin" id="Dl4-yS-B5v"/>
+                                                <constraint firstItem="I4i-Li-1bj" firstAttribute="leading" secondItem="3MF-A0-8Ah" secondAttribute="leadingMargin" id="Ecn-YL-gHh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="houseLabel" destination="oOR-xY-X0Q" id="8t3-5N-Yrs"/>
+                                            <outlet property="nameLabel" destination="2n8-4A-czp" id="kjW-H9-DjG"/>
+                                            <outlet property="roleLabel" destination="BQU-P8-Vcs" id="xyP-Cf-PdS"/>
+                                            <outlet property="schoolLabel" destination="C4g-nL-ceg" id="Mkr-oU-HqL"/>
+                                            <outlet property="speciesLabel" destination="dD3-Sp-51H" id="QJ8-1B-otv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="si9-hD-Nit" secondAttribute="bottom" id="L2b-Ue-Mfb"/>
+                            <constraint firstItem="si9-hD-Nit" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Let-Zh-uVX"/>
+                            <constraint firstItem="si9-hD-Nit" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NfH-jM-FaG"/>
+                            <constraint firstItem="si9-hD-Nit" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bri-Bc-OOj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="si9-hD-Nit" id="cL9-E3-idC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="-147"/>
+        </scene>
+    </scenes>
+</document>
