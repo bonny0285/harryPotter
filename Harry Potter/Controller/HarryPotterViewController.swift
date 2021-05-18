@@ -8,22 +8,21 @@
 
 import UIKit
 
-
-
-
 class HarryPotterViewController: UIViewController {
-
+    
+    //MARK: - Outlets
     
     @IBOutlet weak var tableView: UITableView!
     
-   
+    //MARK: - Properties
+    
     var harryPotterArray = [HarryPotterModel]()
     
-    
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -32,14 +31,10 @@ class HarryPotterViewController: UIViewController {
             self.tableView.reloadData()
             print(self.harryPotterArray.count)
         })
-        
-        
-       
     }
-
-    
-
 }
+
+//MARK: - UITableViewDelegate,UITableViewDataSource
 
 extension HarryPotterViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,6 +48,4 @@ extension HarryPotterViewController: UITableViewDelegate,UITableViewDataSource {
         
         return cell
     }
-    
-    
 }

@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import Combine
 
 
 struct HarryPotterModel {
@@ -28,16 +29,30 @@ struct HarryPotterModel {
     }
     
     
-    static func getData(completion: @escaping ([HarryPotterModel]) -> (Void)){
+    static func getData(completion: @escaping ([HarryPotterModel]) -> (Void)) {
         
         let apiKey = "$2a$10$aiWFgIEqzNzB9GB/8MCdmOMApkXkQkj5fJFTr7ncm3RzsBT4uWNWW"
         let url = "https://www.potterapi.com/v1/characters"
         let parameters = ["key": "\(apiKey)"]
         var harryPotterArray = [HarryPotterModel]()
         
+        var combineURL = URL(string: "https://www.potterapi.com/v1/characters?key=%242a%2410%24aiWFgIEqzNzB9GB/8MCdmOMApkXkQkj5fJFTr7ncm3RzsBT4uWNWW")
+        
+//        private var cancellable: AnyCancellable?
+//        //...
+//        self.cancellable = URLSession.shared.dataTaskPublisher(for: url)
+//        .map { $0.data }
+//        .decode(type: [HarryPotterModel].self, decoder: JSONDecoder())
+//        .replaceError(with: [])
+//        .eraseToAnyPublisher()
+//        .sink(receiveValue: { posts in
+//            print(posts.count)
+//        })
+//        //...
+//        self.cancellable?.cancel()
         
         Alamofire.request(url, parameters: parameters).responseJSON { (response) in
-            
+        
             switch response.result {
             case .success(let value):
                 let json : JSON = JSON(value)
